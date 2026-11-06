@@ -1,0 +1,12 @@
+name: Test Suite
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  check-stage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check status
+        run: echo "ok"
